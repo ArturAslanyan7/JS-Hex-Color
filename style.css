@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p{
+    font-size: 4vmax;
+}
+
+
+button{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 5vh;
+    background-color: blue;
+    border: none;
+    font-size: 2vmax;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+}
+
+#p1{
+    animation-name: ColorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ColorChange{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: yellow;
+    }
+    80%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
